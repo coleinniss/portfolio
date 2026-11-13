@@ -10,11 +10,15 @@
 .fun-item{break-inside:avoid;margin:0 0 40px;animation:fun-in 520ms cubic-bezier(.2,.8,.2,1) both}
 @keyframes fun-in{from{opacity:0;transform:translateY(14px)}}
 .fun-tile{width:100%;background:#356506;display:flex;align-items:center;justify-content:center;transition:transform 420ms cubic-bezier(.2,.8,.2,1),box-shadow 420ms cubic-bezier(.2,.8,.2,1)}
+.fun-cover{display:block;width:100%;height:100%}
+.mn-draw{stroke-dasharray:0 1;animation:mn-draw 3s infinite}
+@keyframes mn-draw{0%{stroke-dasharray:0 1;animation-timing-function:cubic-bezier(.42,0,.58,1)}73.333%,100%{stroke-dasharray:1 1}}
+@media (prefers-reduced-motion: reduce){.mn-draw{animation:none;stroke-dasharray:1 1}}
+.fun-link{display:block;color:inherit;text-decoration:none;-webkit-user-drag:none}
+.fun-link:focus-visible{outline:2px solid #356506;outline-offset:6px}
+.fun-link .fun-title{background-image:linear-gradient(rgba(162,250,75,0.25),rgba(162,250,75,0.25));background-repeat:no-repeat;background-size:0% 100%;transition:background-size 560ms cubic-bezier(.22,.8,.25,1)}
+.fun-link:hover .fun-title,.fun-link:focus-visible .fun-title{background-size:100% 100%}
 .fun-item:hover .fun-tile{transform:translateY(-6px);box-shadow:-2px 18px 32px rgba(0,0,0,0.16)}
-.fun-link{display:block;color:inherit;text-decoration:none}
-.fun-link:focus-visible{outline:2px solid #356506;outline-offset:4px}
-.fun-shot{display:block;height:86%;width:auto;border-radius:22px;box-shadow:0 14px 32px rgba(0,0,0,0.28)}
-.fun-demo{display:inline-block;margin-top:8px;padding-bottom:4px;font-size:15px;line-height:24px}
 .fun-ph{font-family:'Noto Sans Display','Noto Sans',sans-serif;font-weight:500;font-size:14px;color:#E8F2DC}
 .fun-cap{display:flex;flex-direction:column;gap:4px;margin-top:16px}
 .fun-title{font-family:'Noto Sans',sans-serif;font-weight:500;font-size:15px;line-height:27px;color:#1A1A1A}
