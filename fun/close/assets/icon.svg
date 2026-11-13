@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#1e1b18"/>
+  <!-- Heart from the Figma app icon (77:207), scaled to the icon tile -->
+  <g transform="translate(256 256) scale(9.2) translate(-10.868 -10.935)">
+    <path d="M10.868 21.164C10.868 21.164 0.572 13.728 0.572 6.864C0.572 3.432 3.432 0.572 6.864 0.572C8.8088 0.572 10.1816 1.716 10.868 2.86C11.5544 1.716 12.9272 0.572 14.872 0.572C18.304 0.572 21.164 3.432 21.164 6.864C21.164 13.728 10.868 21.164 10.868 21.164Z" fill="#ffffff"/>
+  </g>
+</svg>

@@ -11,7 +11,8 @@ cole-inniss-portfolio/
 │   └── connections/
 │       └── index.html          Case study: Connections onboarding
 ├── fun/
-│   └── index.html              Fun page
+│   ├── index.html              Fun page
+│   └── close/                  "Close", the long-distance couples app (self-contained; try close/#/demo)
 ├── 404.html                    "Page not found"
 ├── assets/
 │   ├── css/

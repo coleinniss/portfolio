@@ -11,6 +11,10 @@
 @keyframes fun-in{from{opacity:0;transform:translateY(14px)}}
 .fun-tile{width:100%;background:#356506;display:flex;align-items:center;justify-content:center;transition:transform 420ms cubic-bezier(.2,.8,.2,1),box-shadow 420ms cubic-bezier(.2,.8,.2,1)}
 .fun-item:hover .fun-tile{transform:translateY(-6px);box-shadow:-2px 18px 32px rgba(0,0,0,0.16)}
+.fun-link{display:block;color:inherit;text-decoration:none}
+.fun-link:focus-visible{outline:2px solid #356506;outline-offset:4px}
+.fun-shot{display:block;height:86%;width:auto;border-radius:22px;box-shadow:0 14px 32px rgba(0,0,0,0.28)}
+.fun-demo{display:inline-block;margin-top:8px;padding-bottom:4px;font-size:15px;line-height:24px}
 .fun-ph{font-family:'Noto Sans Display','Noto Sans',sans-serif;font-weight:500;font-size:14px;color:#E8F2DC}
 .fun-cap{display:flex;flex-direction:column;gap:4px;margin-top:16px}
 .fun-title{font-family:'Noto Sans',sans-serif;font-weight:500;font-size:15px;line-height:27px;color:#1A1A1A}
