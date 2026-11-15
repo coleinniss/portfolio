@@ -28,7 +28,7 @@
 @media (prefers-reduced-motion: reduce){.about-toggle-label::after{animation:none;transition:none}}
 .about-toggle:focus-visible{outline:2px solid #356506;outline-offset:2px}
 .about-photo{height:0;opacity:0;clip-path:inset(0 0 100% 0);transition:height 560ms cubic-bezier(.22,.8,.25,1),margin 560ms cubic-bezier(.22,.8,.25,1),opacity 360ms ease,clip-path 620ms cubic-bezier(.22,.8,.25,1)}
-.about-photo.is-open{height:200px;opacity:1;clip-path:inset(0 0 0 0);transition:height 560ms cubic-bezier(.22,.8,.25,1),margin 560ms cubic-bezier(.22,.8,.25,1),opacity 480ms ease 100ms,clip-path 680ms cubic-bezier(.22,.8,.25,1) 60ms}
+.about-photo.is-open{height:244px;opacity:1;clip-path:inset(0 0 0 0);transition:height 560ms cubic-bezier(.22,.8,.25,1),margin 560ms cubic-bezier(.22,.8,.25,1),opacity 480ms ease 100ms,clip-path 680ms cubic-bezier(.22,.8,.25,1) 60ms}
 @media (min-width: 768px){.about-photo.is-open{margin-bottom:-80px}}
 @media (prefers-reduced-motion: reduce){.about-photo,.about-photo.is-open{transition:none}}
 .page-root{animation:page-fade-in 700ms ease backwards;transition:opacity 650ms ease}
@@ -230,3 +230,8 @@
 @keyframes clt-69{0.000%{opacity:0;transform:translateY(7.48%) scale(1);animation-timing-function:cubic-bezier(.22,.8,.24,1)}91.270%{opacity:0;transform:translateY(7.48%) scale(1);animation-timing-function:cubic-bezier(.22,.8,.24,1)}92.468%{opacity:1;transform:translateY(0.00%) scale(1);animation-timing-function:linear}100%{opacity:1;transform:translateY(0.00%) scale(1)}}
 @keyframes clt-70{0.000%{opacity:0;transform:translateY(4.97%) scale(1);animation-timing-function:cubic-bezier(.22,.8,.24,1)}91.469%{opacity:0;transform:translateY(4.97%) scale(1);animation-timing-function:cubic-bezier(.22,.8,.24,1)}92.668%{opacity:1;transform:translateY(0.00%) scale(1);animation-timing-function:linear}100%{opacity:1;transform:translateY(0.00%) scale(1)}}
 @keyframes clt-71{0.000%{opacity:0;transform:translateY(8.94%) scale(1);animation-timing-function:cubic-bezier(.22,.8,.24,1)}91.669%{opacity:0;transform:translateY(8.94%) scale(1);animation-timing-function:cubic-bezier(.22,.8,.24,1)}92.867%{opacity:1;transform:translateY(0.00%) scale(1);animation-timing-function:linear}100%{opacity:1;transform:translateY(0.00%) scale(1)}}
+.cn-tile{display:block;width:100%;aspect-ratio:461/408;background:#3A66C4;border-radius:26px;position:relative;overflow:hidden;transition:transform 520ms cubic-bezier(.22,.8,.25,1),box-shadow 520ms cubic-bezier(.22,.8,.25,1)}
+.cn-tile::after{content:"";position:absolute;inset:-40%;background:radial-gradient(closest-side,rgba(255,255,255,.22),rgba(255,255,255,0));animation:cn-glow 6s ease-in-out infinite alternate}
+@keyframes cn-glow{from{transform:translate(-18%,-12%)}to{transform:translate(18%,14%)}}
+.project-cover.is-phone:hover .cn-tile,.project-cover.is-phone:focus-visible .cn-tile,.project-card:has(.project-title-link:hover) .cn-tile{transform:translateY(-6px);box-shadow:-2px 18px 32px rgba(0,0,0,.16),0 2px 12px rgba(0,0,0,.12)}
+@media (prefers-reduced-motion: reduce){.cn-tile::after{animation:none}.cn-tile{transition:none}}

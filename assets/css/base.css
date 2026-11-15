@@ -94,3 +94,5 @@ a,button,[role="button"],[role="link"],[role="tab"],summary,.about-toggle,.proje
 .nav-cta:hover span{background:#264a04}
 .nav-cta:focus-visible{outline:none}
 .nav-cta:focus-visible span{outline:2px solid #356506;outline-offset:3px}
+/* keep hidden link previews from widening the page on phones */
+.page-root{overflow-x:clip}
